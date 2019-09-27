@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <script>
+        function validate()
+        {
+            var username=document.getElementById("uname").value;
+            var password=document.getElementById("pass").value;
+
+            if(username=="system"  && password=="admin")
+
+            {
+                alert("Successful");
+                return true;
+
+            }
+            else
+            {
+            alert("unsuccessful");
+            return false;}
+
+        }
+        </script>
+    </head>
+    <body>
+        <form onsubmit=" return validate()">
+            <input id="uname" placeholder="Username" type="text">
+            <br><br>
+            <input id="pass" placeholder="Password" type="password">
+            <br><br>
+            <input type="submit">
+               
+        </form>
+    </body>
+</html>
+
+
+

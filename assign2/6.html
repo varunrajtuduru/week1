@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>next</title>
+    </head>
+    <style>
+        .a{margin-left:500px;
+    border: 2px solid black;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding:15px;
+    
+    }
+    </style>
+    <body>
+        <div class="a">
+        <form method="POST" action="form3.html" align="center"><br>
+            <label>Recovery Email Address</label>
+            <input type="email" style="border-radius: 10px"><br><br>
+            <label>DOB</label>
+            <input type="date" style="border-radius: 10px"><br><br>
+            <label for="inpChocType">Gender</label>
+            <input type="text" id="inpChocType" list="chocType" style="border-radius: 10px">
+            <datalist id="chocType">
+                <option value="Male">
+                <option value="Female">
+                </datalist>
+
+           
+            
+            </datalist><br><br>
+            <label>phone number</label>
+            <input type="tel" pattern="[0-9]{10}" required style="border-radius: 10px"><br><br>
+            <input type="submit" style="border-radius: 10px"><br><br>
+
+
+        </form>
+        </div>
+    </body>
+</html>
