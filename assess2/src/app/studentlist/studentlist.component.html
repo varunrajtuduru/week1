@@ -1,0 +1,53 @@
+
+
+<div class="container">
+    <table class="table table-hover table-responsive">
+      <thead>
+        <tr>
+          <th>department</th> <th>Name</th> <th>Groupname</th> <th>modified date</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let e of stud;let i=index">
+          <td>{{e.department }}</td>
+          <td>{{e.name | titlecase}}</td>
+          <td>{{e.groupname }}</td>
+          <td>{{e.modifieddate|date:"dd/MM/yy | hh:mm:ss"}}</td>
+          <td><button id="edit" (click)="edit(i)">Edit</button></td>
+          <td><button id="delete" (click)="deleteEmployee(i)">Delete</button></td>
+            
+          
+          
+        </tr>
+      </tbody>
+    </table>
+    <p>{{studentlist |json}}</p>
+  </div>
+<div id="updatediv" *ngIf="updatediv">
+  <form (ngSubmit)="update()">
+    <div class="form-group">
+        <label>department</label>
+        <input id="id" class="form-control" type="number" [(ngModel)]="studen.department" name="department">
+    </div>
+    <div class="form-group">
+         <label>Name</label>
+         <input id="name" class="form-control" type="text" [(ngModel)]="studen.name" name="name">
+     </div><br>
+     
+     
+         <div class="form-group">
+                 <label>groupname</label>
+                 <input id="groupname" class="form-control" type="text" [(ngModel)]="studen.groupname" name="groupname">
+             </div>
+        
+             <!-- <div class="form-group">
+                <label>modifieddate</label>
+                <input id="modifieddate" class="form-control" type="date" [(ngModel)]="studen.modifieddate" name="modifieddate">
+            </div> -->
+             
+             <br>
+             <input type="submit" >
+ </form>
+ </div>
+

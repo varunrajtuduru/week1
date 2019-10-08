@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+        .a{
+            border: 2px solid black;
+            width:40%;
+            margin-left:400px;
+            padding:8px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        textarea{
+            width:200px
+        }
+       
+        
+        
+        
+        
+        </style>
+        
+        <script type="text/javascript">
+
+        function passwordValidate(){
+
+        
+        var pass=document.getElementById("password").value;
+        var pass2=document.getElementById("cpassword").value;
+        console.log(pass);
+        console.log(pass2);
+
+        if(pass!==pass2){
+            alert("re-enter password");
+
+        }
+    }
+
+    function Dateob()
+    {
+        var date=new Date();
+        var year=date.getFullYear();
+        var month=date.getMonth()+1;
+        var day=date.getDate();
+        if(month<10)
+        {
+            month='0'+month;
+        }
+        if(day<10)
+        {
+            day='0'+day;
+        }
+
+        document.getElementById("dob").max=year-18+"-"+month+"-"+day;
+}
+
+function namecheck(e)
+{
+    if(!((e.which>=65 && e.which<=90) || (e.which>=97 && e.which<=122)))
+    {
+        e.preventDefault();
+    }
+}
+
+
+
+
+
+        
+        </script>
+    </head>
+    <body >
+            <h3 align="center">Registration Form</h3>
+            <div class="a">
+        <form method="GET" action="" >
+            
+            <label for="nameid">Userid:</label><br>
+            <input type="text" id="nameid" placeholder="Enter User ID" required minlength="5" maxlength="12" style="padding:10px;width:200px"><br><br>
+            <label for="password"> enter password:</label><br>
+            <input type="password" id="password" minlength="7" maxlength="12" required style="padding:10px;width:200px"> 
+            <br><br>
+            <label for="cpassword"> confirm password:</label><br>
+            <input type="password" id="cpassword" minlength="7" maxlength="12" required style="padding:10px;width:200px">
+            <br><br>
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required onkeypress="namecheck(event)" style="padding:10px;width:200px"><br><br>
+            <label >Date of Birth</label><br>
+            <input type="date" name="DOB" id="dob" required onclick="Dateob()" style="padding:10px;width:200px"><br><br>
+            <label for="address">Address:</label><br>
+            <textarea class="form-control" rows="6" width="50px"></textarea><br><br>
+            <label for="select">Select Country:</label><br>
+        <select id="select" required style="padding:10px;width:210px">
+            <option>India</option>
+            <option>Mexico</option>
+            <option>England</option>
+            <option>Srilanka</option>
+            <option>Afganisthan</option>
+            <option>Italy</option>
+            <option>China</option>
+            <option>USA</option>
+            <option>Spain</option>
+            <option>Others</option>
+
+        </select><br><br>
+
+        <label>Zipcode:</label><br>
+        <input type="number" size="6" name="zipcode" required pattern="^(?=.*\d)[\d]{6,}$" style="padding:10px;width:200px"><br><br>
+
+        <label>Email-Address:</label><br>
+            <input type="email" name="email" required style="padding:10px;width:200px"><br><br>
+        
+                <div><label> Sex:</label><br>
+                <input type="radio" name="gender" id="gendermale" required>Male 
+                <input type="radio" name="gender" id="genderfemale" required>Female<br><br>
+                <label> Language:</label><br>
+                <input type="checkbox" value="1">English
+                <input type="checkbox" value="2">Non English<br><br></div>
+
+                <label style="padding-top: -30px">About:</label><br>
+                <textarea class="form-control" rows="6" width="50px"></textarea><br><br>
+
+            <input type="submit" onclick="passwordValidate()" style="padding:10px;width:200px;background-color:burlywood">
+            </form>
+        </div>
+            </body>
+</html>
