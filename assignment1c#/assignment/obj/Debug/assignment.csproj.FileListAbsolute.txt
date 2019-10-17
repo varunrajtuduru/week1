@@ -1,0 +1,6 @@
+C:\Users\vtuduru\source\repos\assignmentc\assignment\bin\Debug\assignment.exe.config
+C:\Users\vtuduru\source\repos\assignmentc\assignment\bin\Debug\assignment.exe
+C:\Users\vtuduru\source\repos\assignmentc\assignment\bin\Debug\assignment.pdb
+C:\Users\vtuduru\source\repos\assignmentc\assignment\obj\Debug\assignment.csprojAssemblyReference.cache
+C:\Users\vtuduru\source\repos\assignmentc\assignment\obj\Debug\assignment.exe
+C:\Users\vtuduru\source\repos\assignmentc\assignment\obj\Debug\assignment.pdb
