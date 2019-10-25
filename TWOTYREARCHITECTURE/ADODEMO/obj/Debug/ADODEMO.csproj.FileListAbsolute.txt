@@ -1,0 +1,9 @@
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\bin\Debug\ADODEMO.exe.config
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\bin\Debug\ADODEMO.exe
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\bin\Debug\ADODEMO.pdb
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\bin\Debug\EMPLOYEE(DATAAXISLAYER).dll
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\bin\Debug\EMPLOYEE(DATAAXISLAYER).pdb
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\obj\Debug\ADODEMO.csprojAssemblyReference.cache
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\obj\Debug\ADODEMO.csproj.CopyComplete
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\obj\Debug\ADODEMO.exe
+C:\Users\vtuduru\source\repos\TWOTYREARCHITECTURE\ADODEMO\obj\Debug\ADODEMO.pdb
