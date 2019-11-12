@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+@*@using (Html.BeginForm())
+{
+    @Html.Label("DEPARTMENTID");
+    @Html.TextBox("id");*@
+<form method="post">
+    <label for="id">Departmentid</label>
+    <input type="number" id="id" name="id"/>
+    <input type="submit" value="ok" />
+</form>
+    
+
+
+<br />
+<br />
+
+@Html.ActionLink("fulllist", "Index")
+
