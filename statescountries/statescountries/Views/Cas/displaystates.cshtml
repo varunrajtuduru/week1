@@ -1,0 +1,12 @@
+﻿@model statescountries.Models.state
+
+<option value="">--select state--</option>
+
+@if(ViewBag.slist!=null)
+{
+    foreach(var item in ViewBag.slist)
+    {
+        <option value="@item">@item.Text</option>
+    }
+}
+

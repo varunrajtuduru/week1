@@ -1,0 +1,37 @@
+﻿@model  statescountries.Models.CascadingClass
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (ViewBag.countrylist != null)
+{
+    @Html.DropDownList("countriesid", ViewBag.countrylist as SelectList, "--select country--", new { @class = "form-control" })
+
+    @Html.DropDownListFor(m => m.sid, new SelectList(""), "--select state--", new { @class = "form-control" })
+}
+
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#countriesid").change(function () {
+            var countryId = document.getElementById("countriesid").value;
+            debugger
+            $.ajax({
+                type: "post",
+                url: "/Cas/GetStateList?cid=" + countryId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#sid").empty();
+                    $("#sid").append(response);
+                    
+                }
+            })
+
+        })
+        
+    })
+</script>
